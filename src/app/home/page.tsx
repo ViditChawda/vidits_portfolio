@@ -1,6 +1,8 @@
 'use client'
 import Image from "next/image";
-export default function Home({ setActiveTab, activeTab }: { setActiveTab: Function; activeTab: string }) {
+
+export default function Home({ setActiveTab }: { setActiveTab: Function }) {
+
     return (
         <div className="h-fit px-6 md:px-10 py-10 md:py-0 md:h-screen flex flex-col items-center gap-3 md:gap-6 justify-around md:w-[75%] md:mx-auto md:flex-row">
             <div className="w-full md:order-2 md:w-[50%] md:items-center h-fit">
