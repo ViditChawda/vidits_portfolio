@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 
-export default function Home({ setActiveTab }: { setActiveTab: Function }) {
+export default function Home() {
 
     return (
         <div className="h-fit px-6 md:px-10 py-10 md:py-0 md:h-screen flex flex-col items-center gap-3 md:gap-6 justify-around md:w-[75%] md:mx-auto md:flex-row">
@@ -12,7 +12,7 @@ export default function Home({ setActiveTab }: { setActiveTab: Function }) {
                 </div>
                 <div className="font-light text-sm md:text-sm md:mr-24">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, deserunt. Et ex non molestias doloremque esse, alias, veniam quis eos inventore nesciunt nemo  incidunt.</div>
                 <div className="flex flex-row gap-4 mt-8 items-center justify-center md:justify-start">
-                    <div onClick={() => setActiveTab('resume')} className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#EEA203] font-semibold hover:bg-white transition-all duration-500">Resume</div>
+                    <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#EEA203] font-semibold hover:bg-white transition-all duration-500">Resume</div>
                     <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#FE3A25] font-semibold hover:bg-white transition-all duration-500">Projects</div>
                     <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#80D9DB] font-semibold hover:bg-white transition-all duration-500">Contact</div>
                 </div>

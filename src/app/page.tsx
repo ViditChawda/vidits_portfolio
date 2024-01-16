@@ -15,7 +15,7 @@ export default function LandingPage() {
             {!isActive &&
                 <>
                     {activeTab === 'home' &&
-                        < Home setActiveTab={setActiveTab} />
+                        < Home />
                     }
                     {
                         activeTab == "resume" &&
