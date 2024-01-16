@@ -11,20 +11,20 @@ export default function LandingPage() {
     const [activeTab, setActiveTab] = useState('home')
     return (
         <div className="relative">
-            <Header isActive={isActive} setIsActive={setIsActive} setActiveTab={setActiveTab}/>
+            <Header isActive={isActive} setIsActive={setIsActive} setActiveTab={setActiveTab} />
             {!isActive &&
                 <>
                     {activeTab === 'home' &&
-                        < Home activeTab={activeTab} setActiveTab={setActiveTab}/>
+                        < Home setActiveTab={setActiveTab} />
                     }
                     {
                         activeTab == "resume" &&
-                        <Resume/>
+                        <Resume />
                     }
                 </>
             }
             {isActive &&
-                <MobileNav isActive={isActive} setIsActive={setIsActive} setActiveTab={setActiveTab}/>
+                <MobileNav isActive={isActive} setIsActive={setIsActive} setActiveTab={setActiveTab} />
             }
             {!isActive &&
                 <Footer />
