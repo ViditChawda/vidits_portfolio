@@ -143,7 +143,59 @@ export default function Resume() {
                 </div>
                 <div className="font-bold text-xl flex flex-col md:flex-row gap-14 border-b border-gray-300 md:mt-16">
                     <div className='md:w-[50%] md:text-2xl'>Education</div>
-
+                    <div className='md:w-[50%] flex flex-col gap-14'>
+                        <div className="flex flex-col gap-1">
+                            <div className="font-light text-sm">2014 - 2018</div>
+                            <div className="font-bold text-base">Podar World School | <br />
+                                Nagpur, India</div>
+                            <div className="text-sm font-normal flex flex-col gap-2">
+                                <p>
+                                    CBSE School <br />
+                                    Percentage: 80.2%
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <div className="font-light text-sm">2018 - 2020</div>
+                            <div className="font-bold text-base">Taywade jr College | <br />
+                                Nagpur, Maharashtra</div>
+                            <div className="text-sm font-normal flex flex-col gap-2">
+                                <p>
+                                    Junior College HSC <br />
+                                    Percentage: 74.4%
+                                </p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-1 mb-10">
+                            <div className="font-light text-sm">2020 - 2024</div>
+                            <div className="font-bold text-base">G.H. Raisoni Collge Of Engineering | <br />
+                                Nagpur, India</div>
+                            <div className="text-sm font-normal flex flex-col gap-2">
+                                <p>
+                                    Bachelors Degree in Computer Science and Engineering <br />
+                                    CGPA : 8.52
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="font-bold text-xl flex flex-col md:flex-row gap-14 md:mt-16">
+                    <div className='md:w-[50%] md:text-2xl'>Skills <br /> & Expertise</div>
+                    <ul className='md:w-[50%] flex flex-col gap-4 font-light text-base'>
+                        <li className="flex flex-col gap-1">
+                            <span className='font-bold'>Programming Langauges :</span> C++, JavaScript, SQL, C, TypeScript
+                        </li>
+                        <li className="flex flex-col gap-1">
+                            <span className='font-bold'>Libraries / Frameworks :</span> React.js , Next.js 14, Node.js, Firebase, Redux-tookit
+                        </li>
+                        <li className="flex flex-col gap-1">
+                            <span className='font-bold'>Tools / Platforms :</span> Android Studio, Vs Code, Git, Git Hub, Firebase
+                        </li>
+                        <li className="flex flex-col gap-1 mb-10">
+                            <span className='font-bold'>Databases :</span>
+                            Firestore, Mongodb
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
