@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        skin: {
+          base: 'var(--color--text-base)'
+        }
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -17,4 +22,5 @@ const config: Config = {
   },
   plugins: [],
 }
+
 export default config
