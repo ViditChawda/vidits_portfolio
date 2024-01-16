@@ -7,7 +7,7 @@ export default function Home() {
                     <div className="font-bold text-4xl md:text-[90px]">Hello</div>
                     <div className="font-semibold text-xl">A Bit About Me</div>
                 </div>
-                <div className="font-light text-base md:text-sm md:mr-24">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, deserunt. Et ex non molestias doloremque esse, alias, veniam quis eos inventore nesciunt nemo  incidunt.</div>
+                <div className="font-light text-sm md:text-sm md:mr-24">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, deserunt. Et ex non molestias doloremque esse, alias, veniam quis eos inventore nesciunt nemo  incidunt.</div>
                 <div className="flex flex-row gap-4 mt-8 items-center justify-center md:justify-start">
                     <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#EEA203] font-semibold hover:bg-white transition-all duration-500">Resume</div>
                     <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#FE3A25] font-semibold hover:bg-white transition-all duration-500">Projects</div>
