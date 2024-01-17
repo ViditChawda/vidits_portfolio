@@ -15,9 +15,9 @@ export default function ProjectCard({ title, description, projectImage, techStac
                     {description}
                 </div>
             </div>
-            <div className='md:w-[40%] border md:relative group'>
-                <NextImage src={projectImage} alt="" className='md:absolute hover:opacity-40 hover:cursor-pointer' />
-                <div className='md:absolute top-[60%] hidden md:block left-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+            <div className='md:w-[40%] border h-[226px] md:relative group'>
+                <NextImage src={projectImage} height={160} width={455} alt="" className='md:absolute hover:opacity-40 hover:cursor-pointer' />
+                <div className='md:absolute top-[50%] hidden md:block left-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                     <FaLink />
                 </div>
             </div>

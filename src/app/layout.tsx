@@ -2,6 +2,8 @@ import Header from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
+import { ThemeProvider } from './theme-provider'
+import { ThemeSwitcher } from '@/components/ThemeSwitcher'
 
 export const metadata = {
   title: 'Vidit Portfolio',
@@ -17,12 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#F2F2F3] `}>
-     
-        <div className=''>
-          {children}
-        </div>
-        
+      <body className={`${inter.className} bg-[#F2F2F3] dark:bg-black `}>
+        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
+          <div>
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
