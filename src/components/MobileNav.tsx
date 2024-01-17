@@ -1,4 +1,5 @@
 import { useRouter } from "next/navigation"
+import { ThemeSwitcher } from "./ThemeSwitcher"
 
 export default function MobileNav({ isActive, setIsActive, setActiveTab }: { isActive: boolean, setIsActive: Function, setActiveTab: Function }) {
     const router = useRouter()
@@ -13,6 +14,7 @@ export default function MobileNav({ isActive, setIsActive, setActiveTab }: { isA
                 setActiveTab('projects')
             }}>Projects</div>
             <div>Contact</div>
+            <div><ThemeSwitcher /></div>
         </div>
     )
 

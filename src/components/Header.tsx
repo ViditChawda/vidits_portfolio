@@ -14,7 +14,9 @@ export default function Header({ isActive, setIsActive, setActiveTab }: { isActi
                 </div>
                 <div className="font-light">SDE</div>
             </div>
-            <ThemeSwitcher />
+            <div className="hidden md:block">
+                <ThemeSwitcher />
+            </div>
             <div className="">
                 <div className="md:block hidden">
                     <div className="font-light items-center flex flex-row">
