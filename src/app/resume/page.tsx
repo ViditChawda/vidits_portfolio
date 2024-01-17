@@ -32,7 +32,7 @@ export default function Resume() {
         <div className="md:w-[75%] mx-auto">
             <div className="h-fit py-6 md:py-0 px-6 md:px-0 flex flex-col gap-6">
                 <div className="font-bold text-2xl md:text-4xl md:mt-10">Resume</div>
-                <div className="font-bold text-xl flex flex-col md:flex-row gap-14 border-b border-gray-300 md:mt-10 md:py-0 py-10">
+                <div className="font-bold text-xl flex flex-col md:flex-row gap-14 border-b border-gray-300 md:mt-10 md:py-10 py-10">
                     <motion.div
                         className='md:w-[50%] md:text-2xl'>Work <br /> Experience</motion.div>
 
