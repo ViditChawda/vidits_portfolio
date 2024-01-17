@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
+
 
 export default function Resume() {
     const [showFullDescription1, setShowFullDescription1] = useState(false);
@@ -28,10 +30,11 @@ export default function Resume() {
 
     return (
         <div className="md:w-[75%] mx-auto">
-            <div className="h-fit md:px-10 py-6 md:py-0 px-6 flex flex-col gap-6">
-                <div className="font-bold text-2xl md:text-4xl md:mt-20">Resume</div>
-                <div className="font-bold text-xl flex flex-col md:flex-row gap-14 border-b border-gray-300 md:mt-16 py-10">
-                    <div className='md:w-[50%] md:text-2xl'>Work <br /> Experience</div>
+            <div className="h-fit py-6 md:py-0 px-6 md:px-0 flex flex-col gap-6">
+                <div className="font-bold text-2xl md:text-4xl md:mt-10">Resume</div>
+                <div className="font-bold text-xl flex flex-col md:flex-row gap-14 border-b border-gray-300 md:mt-10 md:py-0 py-10">
+                    <motion.div
+                        className='md:w-[50%] md:text-2xl'>Work <br /> Experience</motion.div>
 
                     {/* Experience 1 */}
                     <div className='md:flex md:flex-col md:w-[50%] md:gap-14 flex flex-col gap-14'>
@@ -54,7 +57,7 @@ export default function Resume() {
                                         <>
                                             {`- Front-end Development: Proficient in React, JavaScript, TypeScript, and Redux to create dynamic and
                     user-friendly web interfaces. `}
-                                            <span className="text-blue-500 cursor-pointer" onClick={() => toggleDescription(1)}>
+                                            <span className="text-[#EFA202] cursor-pointer" onClick={() => toggleDescription(1)}>
                                                 Read More
                                             </span>
                                         </>
@@ -81,7 +84,7 @@ export default function Resume() {
                                     ) : (
                                         <>
                                             {`- Developed the frontend of a Restaurant Management System using JavaScript and React.js. `}
-                                            <span className="text-blue-500 cursor-pointer" onClick={() => toggleDescription(2)}>
+                                            <span className="text-[#EFA202] cursor-pointer" onClick={() => toggleDescription(2)}>
                                                 Read More
                                             </span>
                                         </>
@@ -107,7 +110,7 @@ export default function Resume() {
                                     ) : (
                                         <>
                                             {`- Successfully completed tasks as a MERN stack developer, contributing to the development of a full-stack project. `}
-                                            <span className="text-blue-500 cursor-pointer" onClick={() => toggleDescription(3)}>
+                                            <span className="text-[#EFA202] cursor-pointer" onClick={() => toggleDescription(3)}>
                                                 Read More
                                             </span>
                                         </>
@@ -131,7 +134,7 @@ export default function Resume() {
                                     ) : (
                                         <>
                                             {`- Led and managed the GDSC chapter at GH Raisoni College of Engineering, overseeing a team of dedicated student members and driving the club's mission to promote technology and innovation on campus. `}
-                                            <span className="text-blue-500 cursor-pointer" onClick={() => toggleDescription(4)}>
+                                            <span className="text-[#EFA202] cursor-pointer" onClick={() => toggleDescription(4)}>
                                                 Read More
                                             </span>
                                         </>

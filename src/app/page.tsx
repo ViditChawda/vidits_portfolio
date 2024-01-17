@@ -5,6 +5,7 @@ import MobileNav from "@/components/MobileNav";
 import { useState } from "react";
 import Home from "./home/page";
 import Resume from "./resume/page";
+import Projects from "./projects/page";
 
 export default function LandingPage() {
     const [isActive, setIsActive] = useState(false)
@@ -18,8 +19,12 @@ export default function LandingPage() {
                         < Home />
                     }
                     {
-                        activeTab == "resume" &&
+                        activeTab === "resume" &&
                         <Resume />
+                    }
+                    {
+                        activeTab === "projects" &&
+                        <Projects />
                     }
                 </>
             }

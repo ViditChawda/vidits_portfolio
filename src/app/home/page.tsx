@@ -1,5 +1,7 @@
 'use client'
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 export default function Home() {
 
@@ -12,14 +14,27 @@ export default function Home() {
                 </div>
                 <div className="font-light text-sm md:text-sm md:mr-24">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, deserunt. Et ex non molestias doloremque esse, alias, veniam quis eos inventore nesciunt nemo  incidunt.</div>
                 <div className="flex flex-row gap-4 mt-8 items-center justify-center md:justify-start">
-                    <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#EEA203] font-semibold hover:bg-white transition-all duration-500">Resume</div>
-                    <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#FE3A25] font-semibold hover:bg-white transition-all duration-500">Projects</div>
-                    <div className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#80D9DB] font-semibold hover:bg-white transition-all duration-500">Contact</div>
+                    <motion.div
+                        transition={{ duration: 0.01 }}
+                        whileHover={{ scale: 1.1 }}
+                        className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#EEA203] font-semibold hover:bg-white transition-all duration-500">Resume</motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#FE3A25] font-semibold hover:bg-white transition-all duration-500">Projects</motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        className="w-[100px] h-[100px] md:w-[140px] md:h-[140px] md:text-xl border border-black rounded-full cursor-pointer flex items-center justify-center bg-[#80D9DB] font-semibold hover:bg-white transition-all duration-500">Contact</motion.div>
                 </div>
+
             </div>
-            <div className="rounded-full w-[320px] h-[320px] overflow-hidden flex items-start justify-center md:w-[500px] md:h-[500px] md:order-1">
+
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="rounded-full w-[320px] h-[320px] overflow-hidden flex items-start justify-center md:w-[500px] md:h-[500px] md:order-1">
                 <Image alt="mypic" src='/my_pic_7.jpg' width={520} height={520} />
-            </div>
+            </motion.div>
         </div>
     )
 }

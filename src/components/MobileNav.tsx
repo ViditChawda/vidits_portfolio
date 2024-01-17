@@ -8,7 +8,10 @@ export default function MobileNav({ isActive, setIsActive, setActiveTab }: { isA
                 setIsActive(!isActive)
                 setActiveTab('resume')
             }}>Resume</div>
-            <div>Projects</div>
+            <div onClick={() => {
+                setIsActive(!isActive)
+                setActiveTab('projects')
+            }}>Projects</div>
             <div>Contact</div>
         </div>
     )

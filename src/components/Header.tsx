@@ -24,7 +24,9 @@ export default function Header({ isActive, setIsActive, setActiveTab }: { isActi
                         >
                             Resume
                         </div>
-                        <div className="border-r border-gray-500 px-4 hover:cursor-pointer hover:text-gray-500 transition duration-900 text-base">Projects</div>
+                        <div onClick={() => {
+                            setActiveTab('projects')
+                        }} className="border-r border-gray-500 px-4 hover:cursor-pointer hover:text-gray-500 transition duration-900 text-base">Projects</div>
                         <div className=" px-4 hover:cursor-pointer hover:text-gray-500 transition duration-900 text-base">Contact</div>
                     </div>
                 </div>
