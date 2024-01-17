@@ -6,7 +6,7 @@ export default function ProjectCard({ title, description, projectImage, techStac
         <div className="w-full h-fit flex flex-col gap-4 md:gap-20 md:flex md:flex-row md:mt-10">
             <div className='flex flex-col gap-2 md:w-[50%]'>
                 <div className='text-lg md:text-2xl font-bold'>{title}</div>
-                <div className='flex flex-row gap-2 text-[#EFA202]'>
+                <div className='flex text-sm flex-row gap-2 text-[#EFA202]'>
                     {techStack.map((t) => (
                         <div key={t}>{t},</div>
                     ))}
