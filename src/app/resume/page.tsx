@@ -43,7 +43,7 @@ export default function Resume() {
                             <div className="font-light text-sm">Sep 2023 - Present</div>
                             <div className="font-bold text-base">Software Developer</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     {showFullDescription1 ? (
                                         <>
                                             - Front-end Development: Proficient in React, JavaScript, TypeScript, and Redux to create dynamic and
@@ -72,7 +72,7 @@ export default function Resume() {
                             <div className="font-light text-sm">Jun 2023 - Sep 2023</div>
                             <div className="font-bold text-base">Mern Stack Developer</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     {showFullDescription2 ? (
                                         <>
                                             - Developed the frontend of a Restaurant Management System using JavaScript and React.js.
@@ -98,7 +98,7 @@ export default function Resume() {
                             <div className="font-light text-sm">May 2023 - Sep 2023</div>
                             <div className="font-bold text-base">Full Stack Developer</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     {showFullDescription3 ? (
                                         <>
                                             - Successfully completed tasks as a MERN stack developer, contributing to the development of a full-stack project
@@ -124,7 +124,7 @@ export default function Resume() {
                             <div className="font-light text-sm">Jul 2022 - Sep 2023</div>
                             <div className="font-bold text-base">Lead</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     {showFullDescription4 ? (
                                         <>
                                             - Led and managed the GDSC chapter at GH Raisoni College of Engineering, overseeing a team of dedicated student members and driving the clubs mission to promote technology and innovation on campus
@@ -152,7 +152,7 @@ export default function Resume() {
                             <div className="font-bold text-base">Podar World School | <br />
                                 Nagpur, India</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     CBSE School <br />
                                     Percentage: 80.2%
                                 </p>
@@ -163,7 +163,7 @@ export default function Resume() {
                             <div className="font-bold text-base">Taywade jr College | <br />
                                 Nagpur, Maharashtra</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     Junior College HSC <br />
                                     Percentage: 74.4%
                                 </p>
@@ -174,7 +174,7 @@ export default function Resume() {
                             <div className="font-bold text-base">G.H. Raisoni Collge Of Engineering | <br />
                                 Nagpur, India</div>
                             <div className="text-sm font-normal flex flex-col gap-2">
-                                <p>
+                                <p className='font-light'>
                                     Bachelors Degree in Computer Science and Engineering <br />
                                     CGPA : 8.52
                                 </p>
